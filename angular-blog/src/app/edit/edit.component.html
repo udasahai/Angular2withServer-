@@ -1,0 +1,17 @@
+<div id="former" *ngIf="post!=undefined&&post!=null">
+<div id="inner" [@fadeInAnimation]="fader"><form #myForm="ngForm" #frm>
+<label>Title</label><br>
+<div>
+<input [(ngModel)]="post.title" type="text" value="{{post.title}}" name="title" #Title="ngModel">
+</div>
+<br>
+<br>
+<label>Body</label> <br>
+<textarea rows="25" cols="50" name="body" [(ngModel)]="post.body" #Body="ngModel">{{post.body}}</textarea> <br>
+<button type="button" (click)="saveBlog(myForm)" [disabled]="!Body.dirty && !Title.dirty">Save</button>
+<button type="button" (click)="toPreview()" >Preview</button>
+<button type="button" (click)="deletePost()" >Delete</button>
+</form><br>
+<span id="modTime"> Last Modified: {{post.modified | date: 'medium'}} </span>
+</div>
+</div>

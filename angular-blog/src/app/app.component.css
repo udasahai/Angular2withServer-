@@ -1,0 +1,12 @@
+#wrapper {
+    width: 100%;
+	height: 100%;
+	position: absolute;
+    overflow: auto; /* will contain if #first is longer than #second */
+    background-image: url(002-subtle-light-pattern.jpg);
+}
+
+#second 
+{
+	background-color: #FCFBE3;
+}

@@ -1,0 +1,28 @@
+#previewer 
+{
+	float: left;
+	width: 60%; 
+}
+
+#inner 
+{
+	border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 700px;
+    overflow: auto;
+}
+
+#badge {
+  font-size: large;
+  text-align: center;
+  color: darkgreen;
+  text-decoration: bold;
+  padding: 0.8em 0.7em 0 0.7em;
+  /*background-color: #607D8B;*/
+  position: relative;
+/*  left: -1px;
+  height: 1.8em;
+  min-width: 16px;
+  border-radius: 4px 4px 4px 4px;*/
+}
